@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Стратегия на 3 месяца: Марина Плотникова</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F1F3; --ink:#2B2230; --muted:#7A6E7E; --line:#E6DDE3; --card:#FFFFFF;
+  --c0:#B5697A; --t0:#F7EDEF;
+  --c1:#4C5B8C; --t1:#EEF0F7;
+  --c2:#6B4E71; --t2:#F4EEF4;
+  --c3:#5E8763; --t3:#EDF4EE;
+  --c4:#A0683F; --t4:#FBF1E8;
+  --c5:#4F7F86; --t5:#EBF2F1;
+  --fs:17px;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:"Onest",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:var(--fs);line-height:1.6}
+.app{display:flex;min-height:100vh}
+aside{width:300px;flex:none;position:sticky;top:0;height:100vh;overflow-y:auto;padding:28px 18px 24px;border-right:1px solid var(--line);background:#FBF8FA}
+.brand{font-weight:600;font-size:15px;line-height:1.35;margin:0 8px 22px;color:var(--ink)}
+.brand small{display:block;color:var(--muted);font-weight:400;margin-top:4px}
+.nb{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:none;border:0;padding:10px 10px;border-radius:12px;font:inherit;font-size:15px;color:var(--ink);cursor:pointer}
+.nb:hover{background:#F1EAEF}
+.nb .n{flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:600;background:var(--line);color:var(--muted)}
+.ni.on .nb{background:var(--t);font-weight:600}
+.ni.on .nb .n{background:var(--c);color:#fff}
+.subs{display:none;padding:2px 0 8px 50px}
+.ni.on .subs{display:block}
+.sub{display:block;font-size:13.5px;color:var(--muted);text-decoration:none;padding:4px 6px;border-radius:8px;line-height:1.35}
+.sub:hover{color:var(--ink);background:#F1EAEF}
+.tools{margin:22px 8px 0;display:flex;gap:8px;align-items:center;font-size:13px;color:var(--muted)}
+.tools button{border:1px solid var(--line);background:#fff;border-radius:8px;padding:4px 10px;font:inherit;cursor:pointer;color:var(--ink)}
+main{flex:1;min-width:0;padding:40px 48px 80px}
+.pg{display:none;max-width:860px;margin:0 auto;background:var(--card);border-radius:20px;padding:44px 52px 40px;border-top:6px solid var(--c)}
+.pg.on{display:block}
+h1,h2{font-weight:700;line-height:1.2;margin:0 0 24px;letter-spacing:-.01em}
+h1{font-size:2em}
+h2{font-size:1.75em;color:var(--c)}
+h3{font-size:1.2em;font-weight:600;margin:38px 0 12px;padding-top:22px;border-top:1px solid var(--line);scroll-margin-top:24px}
+h4{font-size:1.05em;font-weight:600;margin:24px 0 10px}
+h2+h3{border-top:0;padding-top:0;margin-top:8px}
+p{margin:0 0 14px}
+b{font-weight:600}
+ul,ol{margin:0 0 16px;padding-left:1.4em}
+li{margin:0 0 8px}
+ul li::marker{color:var(--c)}
+ol li::marker{color:var(--c);font-weight:600}
+.note{background:var(--t);border-left:4px solid var(--c);border-radius:0 14px 14px 0;padding:14px 18px;margin:0 0 18px}
+.note p:last-child,.note ul:last-child{margin-bottom:0}
+.note.warn{background:#FFF6E9;border-left-color:#D9A441}
+.scheme{background:var(--t);border-radius:16px;padding:22px 24px;margin:0 0 20px;font-size:.92em;line-height:1.45}
+.scheme .ln{white-space:pre-wrap}
+.scheme .hd{font-weight:600;color:var(--c);margin-top:2px}
+.scheme .arrow{color:var(--c);font-weight:700;padding:3px 0 3px 2px}
+.tw{overflow-x:auto;margin:0 0 20px;border:1px solid var(--line);border-radius:14px}
+table{border-collapse:collapse;width:100%;font-size:.9em;line-height:1.45}
+th,td{text-align:left;vertical-align:top;padding:10px 14px;border-bottom:1px solid var(--line)}
+th{background:var(--t);font-weight:600}
+th.nw{white-space:nowrap}
+td.nw{white-space:nowrap}
+.ov td{vertical-align:middle}
+.ov td:first-child{min-width:0;width:72px}
+.ov td:nth-child(4){min-width:240px}
+.ov tr.wk td{background:var(--t);font-weight:600;color:var(--c)}
+.ov td.cb{text-align:center}
+.ov input{width:18px;height:18px;accent-color:var(--c)}
+.tag{display:inline-block;padding:2px 10px;border-radius:999px;font-size:.85em;white-space:nowrap}
+.tag.g1{background:#EEF0F7;color:#4C5B8C}.tag.g2{background:#F7EDEF;color:#B5697A}.tag.g3{background:#EDF4EE;color:#5E8763}
+
+tbody tr:last-child td{border-bottom:0}
+td:first-child{font-weight:500;min-width:190px}
+.pager{max-width:860px;margin:22px auto 0;display:flex;justify-content:space-between;gap:12px}
+.pager button{border:1px solid var(--line);background:#fff;border-radius:12px;padding:12px 18px;font:inherit;font-size:15px;cursor:pointer;color:var(--ink);max-width:48%;text-align:left}
+.pager button:hover{border-color:var(--muted)}
+.pager button[hidden]{visibility:hidden;display:block}
+.pager .nx{text-align:right;margin-left:auto}
+.pager small{display:block;color:var(--muted);font-size:12.5px}
+button:focus-visible,a:focus-visible{outline:2px solid var(--c1);outline-offset:2px}
+.menu{display:none}
+@media (max-width:900px){
+  .app{display:block}
+  aside{position:fixed;inset:0 auto 0 0;z-index:20;transform:translateX(-100%);transition:transform .2s;box-shadow:0 0 40px rgba(43,34,48,.15)}
+  aside.open{transform:none}
+  .menu{display:inline-flex;position:sticky;top:0;z-index:10;margin:12px;border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 14px;font:inherit;font-size:15px}
+  main{padding:8px 12px 60px}
+  .pg{padding:28px 22px;border-radius:16px}
+}
+@media (prefers-reduced-motion:reduce){aside{transition:none}}
+@media print{aside,.pager,.menu{display:none}.pg{display:block;border:0;padding:0}main{padding:0}}
+.wk-intro{color:var(--muted)}
+details.reel{border:1px solid var(--line);border-radius:14px;margin:0 0 10px;background:#fff}
+details.reel[open]{border-color:var(--c)}
+details.reel summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;padding:12px 16px;flex-wrap:wrap}
+details.reel summary::-webkit-details-marker{display:none}
+details.reel summary::before{content:'›';font-weight:700;color:var(--c);transition:transform .15s;display:inline-block}
+details.reel[open] summary::before{transform:rotate(90deg)}
+.reel .d{font-weight:600;min-width:28px}
+.reel .f{flex:1;min-width:160px}
+.reel .w{font-size:.8em;font-weight:700;background:var(--c);color:#fff;border-radius:6px;padding:2px 8px}
+.tag{font-size:.75em;border-radius:20px;padding:2px 10px;background:var(--line);white-space:nowrap}
+.tag-охват{background:#EEF0F7;color:#4C5B8C}.tag-подписка{background:#EDF4EE;color:#3F6B46}.tag-доверие{background:#F7EDEF;color:#9A4E60}
+.rb{padding:2px 18px 16px}
+.lbl{font-size:.78em;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:14px 0 6px;display:flex;align-items:center;gap:10px}
+.cp{font:inherit;text-transform:none;letter-spacing:0;font-size:.95em;border:1px solid var(--line);background:#fff;border-radius:8px;padding:2px 10px;cursor:pointer;color:var(--ink)}
+.cp.ok{background:var(--t);border-color:var(--c)}
+.screen{white-space:pre-wrap;background:var(--t);border-radius:12px;padding:14px 16px;font-weight:500}
+.cap{white-space:pre-wrap}
+.cta{font-weight:500}
+.extras{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 6px}
+.ex{background:#FBF8FA;border:1px solid var(--line);border-radius:14px;padding:4px 16px}
+.ex h4{margin:12px 0 6px}
+.ex ul{padding-left:1.1em}
+@media (max-width:700px){.extras{grid-template-columns:1fr}}
+
+.ov td:first-child{min-width:0;width:44px;font-weight:400}
+.ov td:nth-child(2){width:56px;font-weight:600}
+.ov td:nth-child(4){min-width:240px}
+.ov a.jump{color:var(--ink);text-decoration:none;border-bottom:1px dashed var(--muted)}
+.ov a.jump:hover{color:var(--c);border-color:var(--c)}
+.reel .w.soft{background:var(--line);color:var(--muted);font-weight:500}
+.lbl.big{margin:22px 0 10px}
+h3 .wk{font-weight:500;color:var(--muted);font-size:.85em}
+details.howto{background:#FBF8FA;border:1px solid var(--line);border-radius:14px;padding:4px 18px;margin:0 0 18px}
+details.howto summary{cursor:pointer;font-weight:600;padding:10px 0}
+.reel .more{margin-top:8px}
+.reel .f small,.ov small.fm{display:block;color:var(--muted);font-size:.8em;margin-top:2px}
+.tg{display:inline-block;font-size:.66em;font-weight:600;letter-spacing:.03em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-right:6px;vertical-align:2px;white-space:nowrap;line-height:1.4}.tg-f{background:#e4f1ea;color:#2b6a4c}.tg-q{background:#fbecd3;color:#8a5a0f}.tg-h{background:#e8e8f5;color:#454588}</style>
+</head>
+<body>
+<button class="menu" id="menu">☰ Разделы</button>
+<div class="app">
+<aside id="side">
+  <div class="brand">Стратегия на 3 месяца<small>Марина Плотникова · фокус, воронка, бот и контент</small></div>
+  <nav><div class="ni" data-i="0"><button class="nb" data-i="0"><span class="n">·</span><span class="nt">Начало и короткая версия</span></button><div class="subs"><a class="sub" href="#s0-0" data-sec="0">1. Точка А: что есть сейчас</a><a class="sub" href="#s0-1" data-sec="0">2. Главная идея</a><a class="sub" href="#s0-2" data-sec="0">2а. Что показал анализ конкурентов (факт факты, гипотеза выводы)</a><a class="sub" href="#s0-3" data-sec="0">3. Схема воронки</a><a class="sub" href="#s0-4" data-sec="0">4. План на ближайшие две недели</a><a class="sub" href="#s0-5" data-sec="0">5. Что решаем на созвоне 20.11</a></div></div><div class="ni" data-i="1"><button class="nb" data-i="1"><span class="n">1</span><span class="nt">Общая картина</span></button><div class="subs"><a class="sub" href="#s1-0" data-sec="1">Что уже сильное</a><a class="sub" href="#s1-1" data-sec="1">Что мешает</a><a class="sub" href="#s1-2" data-sec="1">Главное</a><a class="sub" href="#s1-3" data-sec="1">Как будем измерять</a></div></div><div class="ni" data-i="2"><button class="nb" data-i="2"><span class="n">2</span><span class="nt">Фокус и модель бизнеса</span></button><div class="subs"><a class="sub" href="#s2-0" data-sec="2">Что вы сказали по направлениям</a><a class="sub" href="#s2-1" data-sec="2">Три рабочие модели (гипотеза, выбираете вы)</a><a class="sub" href="#s2-2" data-sec="2">Как вы сами расставили приоритеты</a><a class="sub" href="#s2-3" data-sec="2">Критерии выбора</a><a class="sub" href="#s2-4" data-sec="2">Предварительная рекомендация (гипотеза, решаете вы)</a></div></div><div class="ni" data-i="3"><button class="nb" data-i="3"><span class="n">3</span><span class="nt">Аудитория и позиционирование</span></button><div class="subs"><a class="sub" href="#s3-0" data-sec="3">Кто эти люди (гипотеза до кастдева)</a><a class="sub" href="#s3-1" data-sec="3">Как они говорят (факт комментарии под рилсом 22.10)</a><a class="sub" href="#s3-2" data-sec="3">Как о вас говорят (факт из Актуальных)</a><a class="sub" href="#s3-3" data-sec="3">Что отличает вас (факт, формулировки проверяете вы)</a><a class="sub" href="#s3-4" data-sec="3">Варианты позиционирования (гипотеза, выбираете вы после решения по фокусу)</a><a class="sub" href="#s3-5" data-sec="3">Границы в работе (гипотеза)</a><a class="sub" href="#s3-6" data-sec="3">Что не говорим (стоп-лист)</a></div></div><div class="ni" data-i="4"><button class="nb" data-i="4"><span class="n">4</span><span class="nt">Продуктовая линейка и цены</span></button><div class="subs"><a class="sub" href="#s4-0" data-sec="4">Что уже есть (факт)</a><a class="sub" href="#s4-1" data-sec="4">Лестница (черновик под модель А, меняем после решения)</a><a class="sub" href="#s4-2" data-sec="4">Что проверяем предзаписью</a><a class="sub" href="#s4-3" data-sec="4">Как не терять людей после цены (гипотеза)</a></div></div><div class="ni" data-i="5"><button class="nb" data-i="5"><span class="n">5</span><span class="nt">Воронка и бот</span></button><div class="subs"><a class="sub" href="#s5-0" data-sec="5">Схема (гипотеза)</a><a class="sub" href="#s5-1" data-sec="5">Что с ботом сейчас (факт)</a><a class="sub" href="#s5-2" data-sec="5">Что делаем с ботом (гипотеза)</a><a class="sub" href="#s5-3" data-sec="5">Кодовые слова (черновик)</a><a class="sub" href="#s5-4" data-sec="5">Лид-магниты (кандидаты)</a><a class="sub" href="#s5-5" data-sec="5">Метрики (измеряем, не обещаем)</a></div></div><div class="ni" data-i="6"><button class="nb" data-i="6"><span class="n">6</span><span class="nt">Контент</span></button><div class="subs"><a class="sub" href="#s6-0" data-sec="6">Задачи</a><a class="sub" href="#s6-1" data-sec="6">Что показывает аналитика (факт)</a><a class="sub" href="#s6-2" data-sec="6">Площадки (по вашему решению, гипотеза утверждаем на созвоне)</a><a class="sub" href="#s6-3" data-sec="6">Что берём у конкурентов (гипотеза, отобранное)</a><a class="sub" href="#s6-4" data-sec="6">Рубрики (гипотеза)</a><a class="sub" href="#s6-5" data-sec="6">Ритм (гипотеза)</a><a class="sub" href="#s6-6" data-sec="6">Темы на первые рилсы (гипотеза, из комментариев и конкурентов, проверяете вы)</a><a class="sub" href="#s6-7" data-sec="6">Формат рилсов (гипотеза)</a><a class="sub" href="#s6-8" data-sec="6">Instagram: упаковка</a><a class="sub" href="#s6-9" data-sec="6">Telegram: упаковка</a><a class="sub" href="#s6-10" data-sec="6">Сайт (факт состояние, гипотеза что делаем)</a></div></div><div class="ni" data-i="7"><button class="nb" data-i="7"><span class="n">7</span><span class="nt">Голос и подача</span></button><div class="subs"><a class="sub" href="#s7-0" data-sec="7">Голос</a><a class="sub" href="#s7-1" data-sec="7">Что в тексте</a><a class="sub" href="#s7-2" data-sec="7">Устная речь (для видео)</a><a class="sub" href="#s7-3" data-sec="7">Личное</a></div></div><div class="ni" data-i="8"><button class="nb" data-i="8"><span class="n">8</span><span class="nt">Соцдоказательства</span></button><div class="subs"><a class="sub" href="#s8-0" data-sec="8">Что есть (факт)</a><a class="sub" href="#s8-1" data-sec="8">Чего нет</a><a class="sub" href="#s8-2" data-sec="8">План</a></div></div><div class="ni" data-i="9"><button class="nb" data-i="9"><span class="n">9</span><span class="nt">Конкуренты: что берём и чего не берём</span></button><div class="subs"></div></div><div class="ni" data-i="10"><button class="nb" data-i="10"><span class="n">10</span><span class="nt">План по месяцам</span></button><div class="subs"><a class="sub" href="#s10-0" data-sec="10">Месяц 1 (16.11 - 15.12): фокус и упаковка</a><a class="sub" href="#s10-1" data-sec="10">Месяц 2 (16.12 - 15.01): запуск и проверка спроса</a><a class="sub" href="#s10-2" data-sec="10">Месяц 3 (16.01 - 15.02): обратная связь и докрутка</a></div></div><div class="ni" data-i="11"><button class="nb" data-i="11"><span class="n">11</span><span class="nt">Кто что делает</span></button><div class="subs"><a class="sub" href="#s11-0" data-sec="11">Вы (минимум, ждём ответ время в неделю на согласования)</a><a class="sub" href="#s11-1" data-sec="11">Я</a><a class="sub" href="#s11-2" data-sec="11">Рабочий режим</a></div></div><div class="ni" data-i="12"><button class="nb" data-i="12"><span class="n">12</span><span class="nt">Риски</span></button><div class="subs"></div></div><div class="ni" data-i="13"><button class="nb" data-i="13"><span class="n">13</span><span class="nt">Журнал решений и список «потом»</span></button><div class="subs"><a class="sub" href="#s13-0" data-sec="13">Журнал решений (заполняем с датой)</a><a class="sub" href="#s13-1" data-sec="13">Список «потом» (не делаем до выбора фокуса)</a></div></div><div class="ni" data-i="14"><button class="nb" data-i="14"><span class="n">A</span><span class="nt">Ключевые цифры</span></button><div class="subs"></div></div><div class="ni" data-i="15"><button class="nb" data-i="15"><span class="n">B</span><span class="nt">Что ещё нужно от вас (по мере готовности)</span></button><div class="subs"></div></div></nav>
+  <div class="tools">Текст <button id="fm" aria-label="Уменьшить текст">A−</button><button id="fp" aria-label="Увеличить текст">A+</button></div>
+</aside>
+<main>
+<section class="pg" data-i="0" style="--c:var(--c0);--t:var(--t0)"><h1>Стратегия на 3 месяца: фокус, воронка, бот и контент. Марина Плотникова</h1>
+<p>Версия 0.3 от 18.11.2026 (вечер): добавлены итоги разбора 11 конкурентов и Instagram. Черновик для Notion: вы читаете и правите, потом я собираю версию в HTML. Здесь всё, что я вижу по вашему проекту с учётом ваших голосовых ответов, аналитики Instagram, выгрузок Telegram, сайта и конкурентов. Что решаем на созвоне в пятницу 20.11 в 15:00 по Москве (14:00 по Калининграду), собрано в конце «короткой версии».</p>
+<div class="note">
+<p><strong>Метки в документе</strong></p>
+<ul>
+<li><span class="tg tg-f">факт</span>: взято из ваших слов, страниц или выгрузок</li>
+<li><span class="tg tg-q">ждём ответ</span>: ваш ответ или решение</li>
+<li><span class="tg tg-h">гипотеза</span>: предложение или гипотеза, не решение</li>
+</ul>
+</div>
+<div class="note warn">
+<p><strong>Правила документа.</strong> Юридические и налоговые утверждения здесь не даются: нормы, сроки и цифры в публикациях проверяете вы. Результат в цифрах и сроках не обещаем. Какое направление выбрать, решаете вы, я предлагаю варианты и показываю, что за ними стоит.</p>
+</div>
+<h2>Короткая версия стратегии</h2>
+<h3 id="s0-0">1. Точка А: что есть сейчас</h3>
+<ul>
+<li><span class="tg tg-f">факт</span> <strong>Спрос на тему подтверждён.</strong> Один рилс про снижение налога при продаже недвижимости (22.10.2026): 49 642 просмотра, 40 155 зрителей, 2,4 тыс. сохранений, 936 отправок, 708 новых подписок (это около 43% от всех 1 656 подписчиков). В комментариях люди сами спрашивают про свои ситуации и просят консультацию.</li>
+<li><span class="tg tg-f">факт</span> <strong>Рилс принёс охват, но не оплаты.</strong> Пути для человека нет: призыв вёл в личные сообщения, ответы шли вручную. Из Instagram в Telegram за неделю 8-15 ноября пришло 9 подписчиков (канал 443 человека).</li>
+<li><span class="tg tg-f">факт</span> <strong>Есть заготовки:</strong> бот-справочник (10 вопросов), таблицы по зарубежным счетам, набросок мини-курса из 9 уроков, готовые презентации курса для юристов, сайт с курсом и практикумами (не опубликован).</li>
+<li><span class="tg tg-f">факт</span> <strong>Ясно, чего вы хотите:</strong> личная работа с нерезидентами и сделки с долями, продукты без вашего участия для физлиц по продаже недвижимости, курс для юристов следующим этапом.</li>
+<li><span class="tg tg-f">факт</span> <strong>Данных по доходу и обращениям нет:</strong> таблицы вы не ведёте около полутора лет. Поэтому выбираем фокус по вашим словам, интересу и тому, что показали площадки, а не по статистике. С этой недели предлагаю вести короткий список обращений (дата, тема, чем закончилось).</li>
+</ul>
+<h3 id="s0-1">2. Главная идея</h3>
+<p><span class="tg tg-h">гипотеза</span> Строим <strong>две понятные дорожки</strong>, каждая со своей площадкой:
+1. <strong>Instagram: резиденты и продажа недвижимости.</strong> Рилс с кодовым словом → бот → бесплатный материал → недорогой продукт (мини-курс, справочник). Консультации по этой теме лично не продаём: вы так сказали, и воронка ведёт в продукт.
+2. <strong>Telegram и YouTube: нерезиденты (и сопровождение сделок с долями).</strong> Посты и разборы → бот → материал → консультация или письменное заключение.
+Курс для юристов остаётся следующим этапом.</p>
+<h3 id="s0-2">2а. Что показал анализ конкурентов (факт факты, гипотеза выводы)</h3>
+<ul>
+<li><span class="tg tg-f">факт</span> <strong>Тема продажи недвижимости для резидентов плотно занята.</strong> Надежда Зайцева (2 620 постов, декларация от 7 000 ₽, курс для коллег 52 800 ₽ со скидкой), Евгения Ослоновская (около четверти постов про недвижимость, консультация 10 000 ₽), Вадим Баранча и Анна Буйлова (Instagram, обучение риэлторов и инвесторов).</li>
+<li><span class="tg tg-f">факт</span> <strong>Нерезидентов ведут четверо:</strong> Дулкарнаев (консультация 30 000 ₽, справочники по 10 000 ₽), Назаров (эфиры), Андреев (консультация 25 000 ₽, как у вас), Блынская. Продажа российской недвижимости нерезидентом у них только разовые посты и эфиры, серии нет (грубый подсчёт по ключевым словам).</li>
+<li><span class="tg tg-f">факт</span> <strong>Охват в Instagram у вас на подписчика выше, чем у всех разобранных:</strong> 619 просмотров на 1 656 подписчиков против 4-8% у Баранча, Буйловой и Красновой; лучший рилс 49 642 против 3 229 у лучшего из видимых у Баранча (кроме закрепа Красновой 681 тыс.).</li>
+<li><span class="tg tg-f">факт</span> <strong>Личный аккаунт эксперта работает лучше бренда школы</strong> (Баранча: 1 570 против 540 просмотров на рилс у школы).</li>
+<li><span class="tg tg-h">гипотеза</span> <strong>Что меняется в стратегии:</strong> на тему продажи недвижимости для резидентов идём не «первыми», а с позицией практика ФНС и бесплатным блоком вычетов; нерезиденты остаются главным различием, но «свободная ниша» остаётся гипотезой, проверяем спросом. Мини-курс продаём предзаписью, прогрев серией рилсов (как у Баранча).</li>
+</ul>
+<h3 id="s0-3">3. Схема воронки</h3>
+<p>Рилс или пост с кодовым словом → бот → бесплатный материал (чек-лист, таблица, блок справочника) → выбор «что вам нужно» → платный шаг (справочник, мини-курс, консультация) → при необходимости личная работа.</p>
+<h3 id="s0-4">4. План на ближайшие две недели</h3>
+<ul>
+<li><span class="tg tg-f">факт</span> 16-18.11: бриф, аналитика Instagram, анализ конкурентов (11 конкурентов, итоговая версия), сайт, ваши голосовые ответы (сделано).</li>
+<li>20.11: созвон, выбор модели и порядка направлений.</li>
+<li>21-29.11: позиционирование, шапка, закрепы, структура бота, сценарии первых рилсов, структура мини-курса.</li>
+<li>До 04.12: решение по фокусу фиксируем письменно.</li>
+</ul>
+<h3 id="s0-5">5. Что решаем на созвоне 20.11</h3>
+<ol>
+<li>Порядок направлений: нерезиденты, сделки с долями, мини-курс (как они стоят на ближайшие три месяца).</li>
+<li>Мини-курс: срок первой версии и цена (хотя бы вилка), формат (предзапись или сразу запись).</li>
+<li>Что делаем с анонсом второго потока курса для юристов от 11 ноября.</li>
+<li>Как сделки с долями вписываются в контент и воронку (отдельная рубрика, ссылка в закрепе или только рекомендации).</li>
+<li>Ритм рилсов в неделю и дни съёмки; даты 21-дневного челленджа в Telegram.</li>
+</ol></section><section class="pg" data-i="1" style="--c:var(--c1);--t:var(--t1)"><h2>Блок 1. Общая картина</h2>
+<h3 id="s1-0">Что уже сильное</h3>
+<ul>
+<li><span class="tg tg-f">факт</span> Экспертиза: 20+ лет в налогах (ФНС, крупная компания, частная практика), сильная база по налогам при продаже недвижимости.</li>
+<li><span class="tg tg-f">факт</span> Рилс 22.10.2026 показал спрос: 49 642 просмотра (по Insights), 2,4 тыс. сохранений, 936 отправок, 708 подписок. Сохраняют и пересылают, значит, материал нужен людям как шпаргалка.</li>
+<li><span class="tg tg-f">факт</span> Люди в комментариях задают конкретные вопросы: вычет и расходы на ремонт, единственное жильё и 3 года, продали дом и купили квартиру, «расскажите про 4 способ».</li>
+<li><span class="tg tg-f">факт</span> Доверие держится на рекомендациях: 90% клиентов приходят по рекомендации (ваши слова). Отзыв клиентки-нерезидента: «заплатив 25 тыс за работу, я не заплатила 3 млн налогов» (публиковать с согласия автора).</li>
+<li><span class="tg tg-f">факт</span> Готовые заготовки: бот-справочник, таблицы по автообмену, набросок мини-курса, презентации курса для юристов, практикумы по наследству и дарению на сайте.</li>
+<li><span class="tg tg-f">факт</span> Ваш голос: тёплый, спокойный, на арифметике и «переводе на русский» (блок 7).</li>
+<li><span class="tg tg-f">факт</span> Свободного времени много, снимать готовы сами.</li>
+</ul>
+<h3 id="s1-1">Что мешает</h3>
+<ul>
+<li><span class="tg tg-f">факт</span> <strong>Охват не превращается в деньги.</strong> После рилса вы несколько дней отвечали вручную. Бота с кодовым словом и понятного пути нет.</li>
+<li><span class="tg tg-f">факт</span> <strong>Нет данных по доходу и обращениям.</strong> Таблицы не ведутся около полутора лет. Оценка: почти все обращения не переходят в работу. Вести список обращений с этой недели.</li>
+<li><span class="tg tg-f">факт</span> <strong>Цена консультации.</strong> Для нерезидентов называете 25 000 ₽ (раньше 15 000 ₽). Наблюдение: после повышения клиентов от нерезидентов стало заметно меньше. Для резидентов цены 5 000-7 500 ₽ за консультацию до продажи, 15-25 тыс. ₽ за декларацию. Такие обращения стали редкими: клиенты читают ответы ИИ и цитируют их.</li>
+<li><span class="tg tg-f">факт</span> <strong>Консультации физлицам до продажи недвижимости вы в ближайший год не ведёте</strong> даже за оплату. При этом рилс 22.10 зовёт именно на такую консультацию. Призыв нужно поменять (блок 5).</li>
+<li><span class="tg tg-f">факт</span> <strong>Упаковка не объясняет, зачем обращаться.</strong> Instagram: в шапке «Москва», нет призыва, нет закрепов, Актуальные старше 3 лет. Telegram: общий закреп, нет воронки.</li>
+<li><span class="tg tg-f">факт</span> <strong>Контент выходит редко и без призыва.</strong> 12 публикаций за 3 месяца, налоговые рилсы без вопроса почти не дают комментариев.</li>
+<li><span class="tg tg-f">факт</span> <strong>Направлений несколько:</strong> нерезиденты, сделки с долями, мини-курс, справочник, курс для юристов. Фокус нужен на три месяца, остальное в «потом».</li>
+<li><span class="tg tg-f">факт</span> <strong>Сайт не опубликован</strong> (нет политики конфиденциальности). Платёжный сервис у вас есть, подключим при запуске продаж.</li>
+</ul>
+<h3 id="s1-2">Главное</h3>
+<p><span class="tg tg-h">гипотеза</span> Выбираем главное на три месяца и строим под него путь <strong>контент → бот → бесплатный материал → платный шаг</strong>. Так люди, которые узнают себя в рилсах, попадают в систему, а не в личные сообщения.</p>
+<h3 id="s1-3">Как будем измерять</h3>
+<p>Не обещаем цифр. Смотрим: сколько комментариев с кодовым словом, сколько запустили бота, сколько получили материал, сколько записались или купили шаг.</p></section><section class="pg" data-i="2" style="--c:var(--c2);--t:var(--t2)"><h2>Блок 2. Фокус и модель бизнеса</h2>
+<p>Фиксируем решение письменно с датой: <span class="tg tg-q">ждём ответ</span> до 04.12.2026. Всё, что не выбрали, уходит в список «потом» (блок 13).</p>
+<h3 id="s2-0">Что вы сказали по направлениям</h3>
+<p><strong>Нерезиденты (физлица)</strong>
+- <span class="tg tg-f">факт</span> Это то, что вы хотите оставить в личной работе. Большинство запросов сейчас из ОАЭ. Страна проживания значения не имеет: вы работаете только по российским нормам, по налогам другой страны отправляете к местному юристу.
+- <span class="tg tg-f">факт</span> Типовые запросы: продажа недвижимости в России; нужно ли отчитываться о зарубежных доходах и счетах; требование налоговой по доходам из-за границы; подтверждение нерезидентства документами.
+- <span class="tg tg-f">факт</span> Комфортнее клиенты по рекомендации: понимают, что работа платная.
+- <span class="tg tg-f">факт</span> Кейсов по продаже недвижимости много, по зарубежным счетам мало, по зарубежным доходам хотелось бы больше. Проверка коллегой и партнёр не нужны.
+- <span class="tg tg-f">факт</span> Цены: консультация 25 000 ₽; письменное заключение 50, 75, 100 тыс. ₽; при требовании налоговой цена выше (пример: 120 тыс. ₽). Недавний клиент согласился на 50 000 ₽ за короткую справку по требованию налоговой.</p>
+<p><strong>Сопровождение сделок с долями (юрлица)</strong>
+- <span class="tg tg-f">факт</span> Вы хотите работать именно с налоговым сопровождением корпоративных сделок: продажа долей, выход участника, дарение долей, реорганизация.
+- <span class="tg tg-f">факт</span> Заключение по продаже доли в ООО (лето 2026) вы подготовили за 350 000 ₽ за месяц работы; сейчас обращаются через финансового директора, а в компаниях уже есть юрист и бухгалтер.
+- <span class="tg tg-f">факт</span> Юрлиц мало, но они приносят больше всего денег. Польза для клиента в том, чтобы не ошибиться: важен состав активов общества, привычка сделок по номинальной стоимости может обернуться налогом (оценка Марины, проверяет она).
+- <span class="tg tg-q">ждём ответ</span> Сколько таких запросов было за год и как они приходят (рекомендации, канал).</p>
+<p><strong>Физлица-резиденты (продажа недвижимости)</strong>
+- <span class="tg tg-f">факт</span> Экспертиза самая большая. Личные консультации до продажи вы в ближайший год не ведёте. Подача декларации остаётся услугой, но в будущем не вашими руками.
+- <span class="tg tg-f">факт</span> Вы хотите превратить опыт в онлайн-продукт без вашего участия: мини-курс, инструкции, справочник. Приоритет номер один.
+- <span class="tg tg-h">гипотеза</span> Роль направления: продукты и вход в курс, а не личная консультация.</p>
+<p><strong>Обучение юристов (курс по НДФЛ)</strong>
+- <span class="tg tg-f">факт</span> Первый поток: 4 участника (юристы), 9 модулей, лекции по субботам по 2 часа, цена 65 000 ₽ (55 000 ₽ при ранней оплате), один тариф, презентации готовы.
+- <span class="tg tg-f">факт</span> Анонс второго потока 11.11.2026 опубликован (8 недель, несколько тарифов). Вы говорите, что второй поток пока не обдумывали и хотите начать с продукта для физлиц.
+- <span class="tg tg-q">ждём ответ</span> Что делаем с анонсом: оставить как предзапись, поставить на паузу, убрать.</p>
+<p><strong>Клуб для юристов и бухгалтеров:</strong> вы клубы создавать пока не готовы, уходит в «потом».</p>
+<h3 id="s2-1">Три рабочие модели (гипотеза, выбираете вы)</h3>
+<ul>
+<li><strong>Модель А. «Нерезиденты и сделки с долями + продукты для резидентов».</strong> Личная практика: нерезиденты и сопровождение сделок с долями (высокий чек, узкий круг). Резиденты: мини-курс и справочник без личных консультаций. Курс для юристов позже. Это ближе всего к тому, что вы описали в голосовых.</li>
+<li><strong>Модель Б. «Обучение юристов + малая практика».</strong> Основное: курс, потоки. Практика: 2-3 сложных запроса в месяц. Сейчас вы поставили курс третьим.</li>
+<li><strong>Модель В. «Юрлица + эксперты».</strong> Высокий чек, точечные эксперты. Нужны привлечённые эксперты, команду вы собирать не хотите.</li>
+</ul>
+<h3 id="s2-2">Как вы сами расставили приоритеты</h3>
+<p><span class="tg tg-f">факт</span> Продукты: 1. мини-курс для физлиц, 2. бот-справочник (связан с мини-курсом), 3. курс для юристов.
+<span class="tg tg-f">факт</span> Личная работа: нерезиденты и сделки с долями.
+<span class="tg tg-f">факт</span> Площадки: Telegram и YouTube под нерезидентов, Instagram под продажу недвижимости резидентами.
+<span class="tg tg-q">ждём ответ</span> Порядок трёх направлений на ближайшие три месяца.</p>
+<h3 id="s2-3">Критерии выбора</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Критерий</th>
+<th>Нерезиденты</th>
+<th>Сделки с долями</th>
+<th>Мини-курс для физлиц</th>
+<th>Курс для юристов</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Желание работать</td>
+<td>высокое</td>
+<td>высокое</td>
+<td>высокое</td>
+<td>среднее</td>
+</tr>
+<tr>
+<td>Чек</td>
+<td>25 000-120 000 ₽ за услугу</td>
+<td>до 350 000 ₽ за заключение</td>
+<td>продукт, цену определяем <span class="tg tg-q">ждём ответ</span></td>
+<td>55 000-65 000 ₽ за поток (1-й поток)</td>
+</tr>
+<tr>
+<td>Спрос</td>
+<td>мало данных, запросы стабильные</td>
+<td>запросов мало</td>
+<td>высокий (рилс 22.10)</td>
+<td>не проверялся</td>
+</tr>
+<tr>
+<td>Кейсы и уверенность</td>
+<td>продажа недвижимости: да; счета: мало</td>
+<td>один недавний крупный кейс</td>
+<td>сильная экспертиза</td>
+<td>опыт первого потока</td>
+</tr>
+<tr>
+<td>Нужна ли команда</td>
+<td>нет</td>
+<td>иногда эксперт (вы платили 60 000 ₽ эксперту за консультацию)</td>
+<td>нет, чат вести кому-то позже</td>
+<td>нет</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="s2-4">Предварительная рекомендация (гипотеза, решаете вы)</h3>
+<div class="note">
+<p>Модель А: две дорожки под разные площадки (блок «Главная идея»). Главное условие: <strong>три темы не смешиваем в одном канале и в одном посте</strong>. Тогда фокус остаётся, а возможности не закрываются. Анализ конкурентов (18.11 вечер) не меняет рекомендацию, но уточняет: резиденты и продажа недвижимости самая плотная тема, нерезиденты менее занятая, хотя тоже с четырьмя игроками. Окончательное решение принимаете вы на созвоне и фиксируете до 04.12.</p>
+</div></section><section class="pg" data-i="3" style="--c:var(--c3);--t:var(--t3)"><h2>Блок 3. Аудитория и позиционирование</h2>
+<h3 id="s3-0">Кто эти люди (гипотеза до кастдева)</h3>
+<ul>
+<li><strong>Нерезиденты:</strong> живут за границей (чаще ОАЭ), русскоязычные, с российской недвижимостью или зарубежными доходами. Приходят с вопросом о налоге при продаже, о счетах и уведомлениях, о требовании налоговой, о резидентстве.</li>
+<li><strong>Резиденты:</strong> продали или планируют продать недвижимость, хотят понять, платить ли налог и как его уменьшить.</li>
+<li><strong>Юрлица:</strong> участники и финансовые директора компаний, которым нужна сделка с долями; обращаются через финдиректора.</li>
+<li><strong>Профессионалы:</strong> юристы и бухгалтеры (курс по НДФЛ).</li>
+</ul>
+<h3 id="s3-1">Как они говорят (факт комментарии под рилсом 22.10)</h3>
+<ul>
+<li>«Налоговый вычет в 1 мил рублей и понесённые расходы на ремонт ... вместе уменьшать налог или что-то одно?»</li>
+<li>«Мы продали дом и купили квартиру, и что я не могу снизить налог за счёт другой квартиры?»</li>
+<li>«Если прошло три года и это единственное жильё, нужно в налоговую подавать?»</li>
+<li>«Где же вы были 3 года назад»</li>
+<li>«Не поняла про первый пункт... Что это?» (учим объяснять проще)</li>
+<li>«Подскажите, а вы консультируете по конкретным случаям?»</li>
+</ul>
+<h3 id="s3-2">Как о вас говорят (факт из Актуальных)</h3>
+<p>«профессионал без лишней паники», «ум и компетентность в своём деле», «снижение налогов, доступно для людей», «возможность сохранить деньги», «нашла коллегу, которая как никто другой глубоко разбирается в налогообложении физических лиц», «не похожа на серьёзного юриста, а здесь всё чётко по полочкам».</p>
+<h3 id="s3-3">Что отличает вас (факт, формулировки проверяете вы)</h3>
+<ul>
+<li>Практик из ФНС и бизнеса.</li>
+<li>Объясняете на арифметике и «на русском», со ссылкой на норму.</li>
+<li>Спокойный тон без паники.</li>
+<li>Работаете только по российским нормам и честно говорите, где нужен местный юрист (это граница, которая вызывает доверие).</li>
+</ul>
+<h3 id="s3-4">Варианты позиционирования (гипотеза, выбираете вы после решения по фокусу)</h3>
+<ul>
+<li><strong>Telegram, YouTube (нерезиденты):</strong> «Налоговый юрист для тех, кто живёт за границей, а налоги в России остались: продажа недвижимости, счета, доходы. Спокойно, по нормам».</li>
+<li><strong>Instagram (резиденты):</strong> «Налоги при продаже недвижимости простыми словами: что платить, что можно учесть и как не потерять деньги на ошибках».</li>
+<li><strong>Сделки с долями (закреп или страница):</strong> «Налоговое сопровождение сделок с долями в ООО: продажа, выход, дарение, реорганизация».</li>
+<li>Шапку выбираем вместе после решения по фокусу. Формулировки не обещают результат в цифрах.</li>
+</ul>
+<h3 id="s3-5">Границы в работе (гипотеза)</h3>
+<p>Вы говорили, что клиенты по рекомендации идут легче, чем люди «с улицы». Как это закрепить в боте и профиле:
+- цена и формат консультации видны до записи (без выяснения «а сколько стоит» в переписке);
+- перед записью бот спрашивает коротко, в чём ситуация и из какой вы страны;
+- для консультации называем «от» и что входит (разбор документов, письменный итог);
+- что не делаем лично, пишем прямо (консультации физлицам до продажи недвижимости, налоги другой страны).</p>
+<h3 id="s3-6">Что не говорим (стоп-лист)</h3>
+<ul>
+<li>Громкие обещания конкурентов («обнуляю претензии», «сохранено 1,5 млрд»).</li>
+<li>Давление словами «найдут, будет дороже» без точной нормы.</li>
+<li>Стаж и регалии без одной проверенной формулировки (<span class="tg tg-q">ждём ответ</span> ответ нужен). Сейчас в материалах «19 лет», «более 20 лет», «22 года», «с 2003».</li>
+<li>«Законодательство меняется раз в 13 дней» как факт. Используем: «меняется несколько раз в месяц» (<span class="tg tg-q">ждём ответ</span> вы подтверждаете формулировку).</li>
+<li>Цифры, нормы и формулировки из старых промо без вашей проверки («вернуть не 650, а 750 тысяч», «возврат до 650 000 ₽»).</li>
+</ul></section><section class="pg" data-i="4" style="--c:var(--c4);--t:var(--t4)"><h2>Блок 4. Продуктовая линейка и цены (черновик, гипотеза)</h2>
+<h3 id="s4-0">Что уже есть (факт)</h3>
+<ul>
+<li><strong>Консультации нерезидентам:</strong> 25 000 ₽; письменное заключение 50 000-100 000 ₽, при требовании налоговой выше (пример 120 000 ₽).</li>
+<li><strong>Сделки с долями:</strong> заключение 350 000 ₽ (разовый крупный кейс, лето 2026).</li>
+<li><strong>Резиденты:</strong> консультация до продажи 5 000-7 500 ₽ (не ведёте), подача декларации 15 000-25 000 ₽, с разбором расходов на отделку до 50 000 ₽ (редко).</li>
+<li><strong>Курс для юристов:</strong> первый поток 65 000 ₽ (55 000 ₽ при ранней оплате), один тариф. На сайте тарифы «Базовый» 10 000 ₽ и «Премиум» 30 000 ₽ (3 модуля, 17-18 июля, год не указан <span class="tg tg-q">ждём ответ</span>).</li>
+<li><strong>Практикумы на сайте:</strong> бесплатный чек-лист по наследству и дарению; «Кто и сколько должен заплатить налогов при наследстве и дарении» 890 ₽; «Как быстро без налога продать унаследованное или подаренное имущество» 4 900 ₽.</li>
+<li><strong>Опыт 2023:</strong> «5 инструкций по вычетам» (500 и 1 000 ₽ по Актуальным), вебинары, PDF-инструкции по имущественному вычету (до 2 тыс. ₽ по вашей памяти), конверсия вебинара: из 5 пришедших около 3 покупали (по памяти).</li>
+<li><strong>Бот-справочник:</strong> 10 вопросов заполнено; цена в вашем видении «может, тысяча рублей».</li>
+<li><strong>Мини-курс:</strong> набросок из 9 уроков по 10 минут.</li>
+</ul>
+<h3 id="s4-1">Лестница (черновик под модель А, меняем после решения)</h3>
+<p><strong>Бесплатно</strong>
+- Чек-лист «Минимальные сроки владения» (под рилсы про продажу квартиры).
+- Бот: блок «Вычеты» (около 35 вопросов, как вы склоняетесь).
+- Таблица «Страны автообмена и что нужно знать о зарубежном счёте» (формулировки проверяете вы).
+- Бесплатный чек-лист по наследству и дарению (уже есть на сайте).</p>
+<p><strong>Недорогие шаги (проверка спроса)</strong>
+- Платный справочник в боте: ориентир 1 000 ₽ (ваши слова, цену подтверждаем после теста). Ориентиры рынка: справочник у Блынской 2 100 ₽ (1 300 ₽ подписчикам), справочники Дулкарнаева по 10 000 ₽ (большие, до 630 страниц), клуб Ослоновской (оргсбор 2 900 ₽), мастер-классы Зайцевой 390-4 990 ₽.
+- Практикумы по наследству и дарению 890 ₽ и 4 900 ₽ (готовы, продавать сейчас негде).
+- Мини-курс «6 способов снизить налог при продаже квартиры» (9 уроков по 10 минут, цена <span class="tg tg-q">ждём ответ</span>). Продаём сначала как предзапись с предоплатой.
+- Видео-инструкция по 3-НДФЛ (запись экрана налогового кабинета с вашим голосом): <span class="tg tg-q">ждём ответ</span> входит ли в мини-курс как последний урок (так в наброске).</p>
+<p><strong>Личная работа (нерезиденты)</strong>
+- <span class="tg tg-h">гипотеза</span> Три формата вместо одной цены:
+  - консультация 25 000 ₽ (один вопрос, устно);
+  - письменная справка или заключение, цена «от 50 000 ₽» по количеству вопросов;
+  - сопровождение при требовании налоговой, цена по задаче.
+- Письменный итог (план, риски, ссылки на нормы) как главная ценность. Блынская продаёт время (5 000 и 10 000 ₽ за 30 и 60 минут), Дулкарнаев консультацию 30 000 ₽ без письменного резюме, Андреев 25 000 ₽ (как у вас), Зайцева нерезидентам от 10 000 ₽. У вас продукт с результатом и письменным итогом.</p>
+<p><strong>Сделки с долями</strong>
+- Индивидуальное заключение или сопровождение, цена по задаче. Вход через заявку из бота.</p>
+<p><strong>Обучение</strong>
+- Курс для юристов по НДФЛ: следующим этапом. Тарифы и дату определяем после запуска мини-курса. Ориентиры: налоговый интенсив для юристов у Свободы 13 900-15 500 ₽ (2025), курс Зайцевой «Налоги с недвижки» 52 800 ₽ со скидкой (рассрочка 6 x 8 800 ₽), годовой абонемент Красновой 149 990 ₽ со скидкой 70%.</p>
+<p><strong>Позже (в список «потом»)</strong>
+- Клуб, консультации для юристов, исполнитель для подачи деклараций.</p>
+<h3 id="s4-2">Что проверяем предзаписью</h3>
+<p>Мини-курс продаём как предзапись с предоплатой, чтобы проверить спрос до записи всех уроков. Порог для решения записывать: <span class="tg tg-q">ждём ответ</span> определяем с вами (например, число предоплат).</p>
+<h3 id="s4-3">Как не терять людей после цены (гипотеза)</h3>
+<ul>
+<li>Сначала вопрос в боте «в чём ситуация», потом формат и цена.</li>
+<li>Цена как «от» с понятным составом.</li>
+<li>Недорогой первый шаг (справочник, мини-курс), чтобы не требовать консультацию сразу.</li>
+<li>Разбор переписок с ушедшими (ждём скрины).</li>
+</ul></section><section class="pg" data-i="5" style="--c:var(--c5);--t:var(--t5)"><h2>Блок 5. Воронка и бот</h2>
+<h3 id="s5-0">Схема (гипотеза)</h3>
+<p><strong>Дорожка 1. Instagram → мини-курс (резиденты)</strong>
+1. Рилс на тему из комментариев (продажа квартиры, сроки владения, расходы, вычет) с кодовым словом.
+2. Бот присылает чек-лист и спрашивает «что вас интересует».
+3. Блок «Вычеты» или чек-лист бесплатно.
+4. Предложение мини-курса (предзапись) или справочника.
+5. Прогрев: 2-3 сообщения в боте, отзывы, напоминание.
+6. Покупка или оплата предзаписи.</p>
+<p><strong>Дорожка 2. Telegram и YouTube → нерезиденты</strong>
+1. Пост или разбор (продажа недвижимости, счета, требование налоговой) с призывом в бота.
+2. Бот присылает памятку или таблицу автообмена.
+3. Выбор: «Нужна консультация» → вопрос в боте → формат и цена «от» → запись.
+4. Для сделок с долями: кнопка «Заявка на сопровождение сделки» без цены в боте.
+5. Запасной путь: личные сообщения, если бот не работает (сбой бота у Блынской 10-19.10).</p>
+<h3 id="s5-1">Что с ботом сейчас (факт)</h3>
+<ul>
+<li>10 вопросов (8 вычетов, 2 зарубежных счета), 4 раздела пустые.</li>
+<li>Нет оплаты, записи, сбора контактов и тегов.</li>
+<li>Приветствие на «вы», меню на «ты». Обещание «мы несём ответственность за то, что говорим и пишем» нужно согласовать (<span class="tg tg-q">ждём ответ</span>).</li>
+<li>Таблицы-картинки тяжело читать на телефоне.</li>
+<li>Платёжный сервис у вас есть (по вашим словам), к подключению вернёмся, когда будем продавать.</li>
+<li><span class="tg tg-q">ждём ответ</span> Оферта и политика обработки персональных данных нужны для сбора контактов в боте: проверяем перед запуском.</li>
+</ul>
+<h3 id="s5-2">Что делаем с ботом (гипотеза)</h3>
+<p>Бот собираем в BotHelp, всю техническую часть делаю я.
+- Единый тон («вы»).
+- Новое меню: Российские налоги, Зарубежные налоги, Консультация, Сделки с долями.
+- Сбор контактов и тегов по темам.
+- Кнопки «Консультация», «Задать вопрос», «Записаться» с ценой «от».
+- Дисклеймер «не индивидуальная консультация»: <span class="tg tg-q">ждём ответ</span> формулировка ваша.</p>
+<h3 id="s5-3">Кодовые слова (черновик)</h3>
+<p>«ПРОДАЖА» (сроки, налог при продаже), «ВЫЧЕТ», «НЕРЕЗИДЕНТ», «СЧЁТ» (зарубежные счета), «ДОЛЯ» (сделки с долями). Механика: слово пишется в комментариях (у конкурентов комментариев в десятки раз больше, чем при просьбе писать в директ).</p>
+<h3 id="s5-4">Лид-магниты (кандидаты)</h3>
+<ul>
+<li>Чек-лист «Сроки владения при продаже квартиры» (вы проверяете).</li>
+<li>Таблица «Страны автообмена» (уже есть).</li>
+<li>Блок «Вычеты» из бота.</li>
+<li>Памятка для нерезидентов «Продаёте российскую недвижимость, живя за границей» (формулировки ваши).</li>
+<li>Чек-лист по наследству и дарению (уже есть).</li>
+</ul>
+<h3 id="s5-5">Метрики (измеряем, не обещаем)</h3>
+<ul>
+<li>комментарии со словом на рилс;</li>
+<li>запуски бота;</li>
+<li>получили материал;</li>
+<li>записались или купили шаг;</li>
+<li>цены и пороги <span class="tg tg-q">ждём ответ</span> после первого теста.</li>
+</ul></section><section class="pg" data-i="6" style="--c:var(--c0);--t:var(--t0)"><h2>Блок 6. Контент</h2>
+<h3 id="s6-0">Задачи</h3>
+<ol>
+<li>Охват: рилсы на темы, которые уже показали спрос.</li>
+<li>Доверие: кейсы, разборы, «перевод на русский».</li>
+<li>Продажа: один понятный призыв (кодовое слово) и путь в бота.</li>
+</ol>
+<h3 id="s6-1">Что показывает аналитика (факт)</h3>
+<ul>
+<li>Рилс 22.10: 49 642 просмотра, в 78 раз выше медианы за 3 месяца (619), 2,4 тыс. сохранений, 936 отправок.</li>
+<li>Личные посты дают 19-28 лайков, как налоговые, но клиентов из них вы не видите.</li>
+<li>Налоговые рилсы без вопроса и призыва: 0-3 комментария.</li>
+<li>Большинство плиток в сетке: природа, дорога, море без текста и темы.</li>
+<li>В Telegram личные посты собирают больше реакций (20,9 против 13,8 у налоговых), но клиентов оттуда вы не видите.</li>
+</ul>
+<h3 id="s6-2">Площадки (по вашему решению, гипотеза утверждаем на созвоне)</h3>
+<ul>
+<li><strong>Instagram:</strong> налоги при продаже недвижимости для резидентов, воронка в мини-курс. Основной формат: рилсы. Сторис в Instagram не греем (вы оставляете сторис в Telegram, это органично).</li>
+<li><strong>Telegram:</strong> нерезиденты, разборы, в том числе 21-дневный челлендж (даты <span class="tg tg-q">ждём ответ</span>). Сделки с долями отдельной рубрикой.</li>
+<li><strong>YouTube:</strong> нерезиденты; рилсы выкладываем как Shorts, длинные разборы позже.</li>
+<li>Один материал не переписываем вручную под каждую площадку: правило «публикуем один раз и репостим» (чтобы не было «двух зайцев»).</li>
+</ul>
+<h3 id="s6-3">Что берём у конкурентов (гипотеза, отобранное)</h3>
+<ul>
+<li>Кодовое слово в комментариях (Карамов, Гумен, Каверина).</li>
+<li>Хук-список (Блынская: «Полный список стран, которые передают данные о счетах»).</li>
+<li>Рубрика с вопросами из комментариев.</li>
+<li>Серия «налоги по странам» (Блынская).</li>
+<li>Новости и законопроекты как повод для охвата, с проверкой Марины (Баранча: «новый закон меняет правила проверки недвижимости» 3 229 просмотров).</li>
+<li>Порог реакций вместо кодового слова: «наберём 150, поделюсь шаблоном» (Зайцева, Ослоновская), для Telegram.</li>
+<li>Рубрики «Кейс клиента» и «Истории учеников» (Зайцева) и голосования по ситуациям (Ослоновская), когда появятся кейсы и ученики.</li>
+<li>Серия из трёх рилсов перед запуском мини-курса: «одной ошибки достаточно», «что бывает», «как избежать» (Баранча).</li>
+<li>Кейс-хук с суммой («Как потерять 1 000 000 на продаже квартиры», Буйлова), без раскрытия клиента.</li>
+<li>Единая обложка рилсов; всё через личный аккаунт, без отдельного бренда школы (Баранча).</li>
+</ul>
+<h3 id="s6-4">Рубрики (гипотеза)</h3>
+<ol>
+<li><strong>Случай с консультации</strong> (обезличенно, цена ошибки, как исправили): фирменная рубрика.</li>
+<li><strong>Разбор нормы «в переводе на русский».</strong></li>
+<li><strong>Предупреждение:</strong> ловушки перед сделкой.</li>
+<li><strong>Ответ на вопрос из комментария</strong> (серия по рилсу 22.10, «4 способ»).</li>
+<li><strong>Новость или изменение</strong> (спокойно, без паники).</li>
+<li><strong>Нерезидентам и зарубежные счета</strong> (серия по странам или ситуациям).</li>
+<li><strong>Сделки с долями:</strong> на что обратить внимание при продаже или выходе (без юридических советов, формулировки ваши).</li>
+<li><strong>Личное с мостом к профессии:</strong> не больше 1 из 4-5 постов, степень откровенности решаете вы.</li>
+</ol>
+<h3 id="s6-5">Ритм (гипотеза)</h3>
+<p>Предложение: 2 налоговых рилса в неделю и 1 личный, плюс 1 карусель. Снимать можете сами (по вашим словам, свободного времени много), время на согласование сейчас назвать сложно. Если нагрузка окажется велика, начинаем с 2 рилсов в неделю. <span class="tg tg-q">ждём ответ</span> уточняем на созвоне.</p>
+<h3 id="s6-6">Темы на первые рилсы (гипотеза, из комментариев и конкурентов, проверяете вы)</h3>
+<ol>
+<li>Продолжение рилса 22.10: «ещё способы снизить налог» (просили «4 способ»).</li>
+<li>Единственное жильё и три года: когда налога нет.</li>
+<li>Продали дом и купили квартиру: что можно учесть.</li>
+<li>Расходы на ремонт: что принимает налоговая (ответ на спорный комментарий).</li>
+<li>«Где вы были 3 года назад»: ошибки, которые нельзя исправить после сделки.</li>
+<li>Нерезидент продаёт квартиру: цена ошибки (кейс с отзывом, с согласием).</li>
+<li>Список стран, передающих данные о счетах в РФ, и что делать (таблица).</li>
+<li>Зарубежный счёт и электронные кошельки: нужно ли уведомлять.</li>
+</ol>
+<h3 id="s6-7">Формат рилсов (гипотеза)</h3>
+<ul>
+<li>Первая фраза: один из типов крючков (цитата клиента, парадокс, цена ошибки, миф).</li>
+<li>Структура: вопрос зрителя, короткий ответ, пример с цифрами, вывод, кодовое слово.</li>
+<li>Субтитры в кадре одним шаблоном (розовый и жёлтый, как в аватаре).</li>
+<li>Говорящие ролики начинаем с коротких: практика важнее идеальной подачи.</li>
+</ul>
+<h3 id="s6-8">Instagram: упаковка</h3>
+<ul>
+<li>Имя: вынести фамилию и тему.</li>
+<li>Заголовок: убрать «Москва» <span class="tg tg-q">ждём ответ</span> (Калининград или «онлайн по России»).</li>
+<li>Шапка: результат для клиента и призыв (кодовое слово или ссылка на бота).</li>
+<li>Закрепы: рилс 22.10; ролик про нерезидентов; ролик про доли ООО или ИП.</li>
+<li>Актуальные: «Как работаю и цены», «Продажа квартиры», «Нерезидентам», «Зарубежные счета», «Отзывы с результатами», «Обо мне», «Выступления и СМИ». Старые истории 2022-2023 убрать или обновить.</li>
+<li>Единый стиль обложек и субтитров.</li>
+</ul>
+<h3 id="s6-9">Telegram: упаковка</h3>
+<ul>
+<li>Закреп: кто вы, чем помогаете, как записаться, цены «от», кнопка на бота.</li>
+<li>Рубрики те же, что в Instagram, по правилу «публикуем один раз».</li>
+<li>Резервный канал MAX остаётся запасным.</li>
+</ul>
+<h3 id="s6-10">Сайт (факт состояние, гипотеза что делаем)</h3>
+<ul>
+<li>Сейчас: лендинг курса, тарифы 10 000 и 30 000 ₽, практикумы 890 и 4 900 ₽, не опубликован.</li>
+<li>Не хватает: страницы услуг и цен на консультации, отзывов, контактов, политики конфиденциальности.</li>
+<li>Цвета сайта (синий, розовый, зелёный) отличаются от Instagram (розовый и жёлтый). Единую палитру выбираем при упаковке.</li>
+<li>Что делаем: <span class="tg tg-q">ждём ответ</span> нужен ли сайт в ближайшие три месяца или хватит бота и профиля. Решаем на созвоне.</li>
+</ul></section><section class="pg" data-i="7" style="--c:var(--c1);--t:var(--t1)"><h2>Блок 7. Голос и подача</h2>
+<h3 id="s7-0">Голос</h3>
+<p>Практикующий юрист с чувством юмора, который объясняет на примере человека. Тёплый, умный, чуть ироничный. Не давит, показывает цену ошибки в цифрах.</p>
+<h3 id="s7-1">Что в тексте</h3>
+<ul>
+<li>От первого лица через случай: «Сегодня у меня на консультации...», клиент безымянный.</li>
+<li>Цифры вместо эмоций, ссылка на норму один раз.</li>
+<li>«Перевод на русский», метафоры, самоирония.</li>
+<li>Честность про границы: «в налогах нет короткого ответа».</li>
+<li>Короткие абзацы, 800-2 000 знаков, 1-2 эмодзи, «ёлочки».</li>
+</ul>
+<h3 id="s7-2">Устная речь (для видео)</h3>
+<p>Убираем слова-паразиты («а», «то есть»), оставляем арифметику и «первое, второе, третье». В конце приглашение в бота или канал.</p>
+<h3 id="s7-3">Личное</h3>
+<p>Остаётся, но меньше и с мостом к профессии. Степень откровенности решаете вы.</p></section><section class="pg" data-i="8" style="--c:var(--c2);--t:var(--t2)"><h2>Блок 8. Соцдоказательства</h2>
+<h3 id="s8-0">Что есть (факт)</h3>
+<ul>
+<li>Рекомендации коллег и клиентов, отзывы о мастер-классе и инструкциях по вычетам (2023).</li>
+<li>Публикации и статус: РБК-Недвижимость, спикер Крокус Экспо, финал бизнес-реалити, акселерация ФРИИ (формулировки согласуем с вами).</li>
+<li>Первый поток курса (4 участника, отзывы в чате).</li>
+<li>Отзыв клиентки-нерезидента (3 млн против 25 тыс.), нужно её согласие.</li>
+</ul>
+<h3 id="s8-1">Чего нет</h3>
+<ul>
+<li>Отзывов по главным услугам с суммой, сроком и результатом.</li>
+<li>Свежих отзывов: все истории старше 3 лет.</li>
+</ul>
+<h3 id="s8-2">План</h3>
+<ul>
+<li>Отзывы по шаблону «ситуация, что сделали, результат» (с согласием клиента, суммы обезличенно).</li>
+<li>Лучший отзыв в Актуальные при согласии автора.</li>
+<li>После каждой консультации просим короткий отзыв.</li>
+<li>Отзывы участников курса из чата: с их разрешения.</li>
+</ul></section><section class="pg" data-i="9" style="--c:var(--c3);--t:var(--t3)"><h2>Блок 9. Конкуренты: что берём и чего не берём</h2>
+<p>Данные: выгрузки Telegram-каналов (Дулкарнаев, Назаров, Андреев, «Финансы под контролем», Зайцева, Краснова, Ослоновская), Instagram по скриншотам, прайсы сайтов, бот Блынской. Подробно: файл «Конкуренты_Марины_итог» и PDF «Анализ конкурентов» (v6, 18 страниц).</p>
+<p><strong>По теме «нерезиденты и зарубежные счета»</strong>
+- <strong>Блынская:</strong> бот с ценой и записью, бесплатные PDF, серия по странам, справочник 1 300-2 100 ₽, консультации 5 000 и 10 000 ₽ за 30 и 60 минут.
+- <strong>Дулкарнаев:</strong> 1 881 пост, библиотека справочников и разборов по первоисточникам, консультация 30 000 ₽, подача уведомлений и отчётов 20-30 тыс. ₽, справочники 10 000 ₽.
+- <strong>Назаров (GidPrava):</strong> эфиры, записи, подкаст, чек-листы, «Памятка налоговым нерезидентам».
+- <strong>Андреев:</strong> консультация 25 000 ₽ (как у вас), заголовки с флагом страны, прайс-пост в закрепе.
+- Продажа российской недвижимости нерезидентом у всех четверых разовые посты и эфиры.</p>
+<p><strong>По теме «продажа недвижимости для резидентов»</strong>
+- <strong>Зайцева:</strong> 2 620 постов, декларация от 7 000 ₽, консультация от 5 000 ₽, курс для коллег 52 800 ₽ со скидкой. Самые высокие реакции среди разобранных каналов в 2025-2026.
+- <strong>Ослоновская:</strong> 2 312 постов, около четверти про недвижимость, консультация 10 000 ₽ (2024), клуб с оргсбором 2 900 ₽.
+- <strong>Баранча, школа Баранча и Буйлова (Instagram):</strong> налоги и недвижимость для риэлторов и инвесторов, мини-курс «Налоги без ошибок» (запуск серией рилсов). Охват 250-3 200 просмотров на рилс.
+- <strong>Гумен:</strong> кодовое слово «ХОЧУ ВЫЧЕТ», лучший рилс за осень 10,8 тыс. просмотров, у вас 49,6 тыс.</p>
+<p><strong>Сделки с долями:</strong> «Финансы под контролем», около 15 постов из 786, сайт и цены не видны.</p>
+<p><strong>Воронки и обучение:</strong> Каверина (бесплатный курс, тест, предзапись, три тарифа), Краснова (бесплатные эфиры, мини-обучение, годовой абонемент 149 990 ₽), Свобода (недорогой продукт для юристов, интенсив 13 900-15 500 ₽), Беляева (запись вебинара 200-500 ₽).</p>
+<p><strong>Чего у них нет (гипотеза, не доказана):</strong> сочетания «налоги при продаже недвижимости для физлиц + нерезиденты + бесплатный блок вычетов + опыт ФНС» в одном бренде. Instagram и YouTube конкурентов смотрели не полностью: у многих видны только шапки и несколько рилсов.</p>
+<p><strong>Что не копируем:</strong> громкие обещания («обнуляю претензии», «сохранено 1,5 млрд», «сэкономили свыше 100 млн», «неприлично много денег до апреля»), заявления о собственном доходе, давление («вас разоблачат»), схемы и налоговую миграцию.</p></section><section class="pg" data-i="10" style="--c:var(--c4);--t:var(--t4)"><h2>Блок 10. План по месяцам (черновик)</h2>
+<p>Старт 16.11.2026, срок 3 месяца (до середины февраля 2027). Праздничные даты учитываем при согласовании ритма.</p>
+<h3 id="s10-0">Месяц 1 (16.11 - 15.12): фокус и упаковка</h3>
+<p><strong>Неделя 1 (16-22.11)</strong>
+- <span class="tg tg-f">факт</span> Бриф, аналитика Instagram, анализ конкурентов, сайт, ваши голосовые ответы.
+- 20.11: созвон, выбор модели и порядка направлений.
+- Вы: список обращений (ведёте с этой недели).</p>
+<p><strong>Неделя 2 (23-29.11)</strong>
+- Позиционирование: фраза, шапка, закреп (по выбранной модели).
+- Структура бота и первые сценарии рилсов (4-6).
+- Мини-курс: структура уроков, формат предзаписи.
+- Вы: записываете 2 первых рилса, определяем даты челленджа в Telegram.</p>
+<p><strong>Неделя 3 (30.11-06.12)</strong>
+- До 04.12: решение по фокусу фиксируем письменно.
+- Упаковка: цены «от», форматы консультаций, лестница продуктов.
+- Бот: меню, тексты, кодовые слова.</p>
+<p><strong>Неделя 4 (07-13.12)</strong>
+- Бот собран в BotHelp: меню, материалы, прогрев, запись.
+- Instagram и Telegram: шапка, закрепы, Актуальные.
+- Контент-план на 4 недели, сценарии рилсов.
+- <strong>Результат месяца:</strong> базовая воронка (бот и лид-магнит), упакованный профиль, главный оффер.</p>
+<h3 id="s10-1">Месяц 2 (16.12 - 15.01): запуск и проверка спроса</h3>
+<ul>
+<li>Публикуем контент с кодовыми словами по плану (ритм <span class="tg tg-q">ждём ответ</span>).</li>
+<li>Запускаем бесплатный материал и предзапись мини-курса (или справочник).</li>
+<li>Telegram: 21-дневный челлендж и рубрика по нерезидентам.</li>
+<li>Проверяем: комментарии со словом, запуск бота, заявки.</li>
+<li>Разбор переписок и скрипты по возражениям.</li>
+<li>Недельный созвон 20-30 минут для докрутки (формат <span class="tg tg-q">ждём ответ</span>).</li>
+</ul>
+<h3 id="s10-2">Месяц 3 (16.01 - 15.02): обратная связь и докрутка</h3>
+<ul>
+<li>Разбор результатов: что сработало, что убрать.</li>
+<li>Доработка бота, текстов, оффера и цен.</li>
+<li>Если предзапись набрана: запись и выпуск мини-курса.</li>
+<li>Решаем про YouTube и курс для юристов.</li>
+<li>План на следующие 3 месяца.</li>
+</ul></section><section class="pg" data-i="11" style="--c:var(--c5);--t:var(--t5)"><h2>Блок 11. Кто что делает</h2>
+<h3 id="s11-0">Вы (минимум, ждём ответ время в неделю на согласования)</h3>
+<ul>
+<li>Проверяете юридическую точность текстов и сценариев (срок проверки <span class="tg tg-q">ждём ответ</span> рабочих дней).</li>
+<li>Снимаете рилсы и видео сами.</li>
+<li>Записываете уроки мини-курса.</li>
+<li>Предоставляете доступ к боту, сайту, материалам.</li>
+<li>Принимаете решения по фокусу и ценам.</li>
+</ul>
+<h3 id="s11-1">Я</h3>
+<ul>
+<li>Аналитика, стратегия, позиционирование.</li>
+<li>Воронка, бот в BotHelp, лид-магниты, вся техническая часть. Подрядчиков не привлекаем.</li>
+<li>Сценарии, контент-план, тексты, шаблоны.</li>
+<li>Скрипты для переписки, разбор диалогов.</li>
+<li>Подсказываю, как записать экран для видео-инструкции и сам монтаж уроков (<span class="tg tg-q">ждём ответ</span> уточним, кто монтирует).</li>
+</ul>
+<h3 id="s11-2">Рабочий режим</h3>
+<ul>
+<li>Малые шаги с датой, решения фиксируем письменно.</li>
+<li>Новые идеи сразу в список «потом», пока не выбран фокус.</li>
+<li>Не меняем несколько вещей одновременно.</li>
+</ul></section><section class="pg" data-i="12" style="--c:var(--c0);--t:var(--t0)"><h2>Блок 12. Риски</h2>
+<ul>
+<li><strong>Высокая конкуренция по продаже недвижимости для резидентов.</strong> Решение: позиция практика ФНС, бесплатный блок вычетов, нерезиденты как главное различие; не обещаем «свободной ниши», проверяем спрос предзаписью.</li>
+<li><strong>Три направления одновременно.</strong> Решение: выбор порядка, разные площадки под разные темы, остальное в «потом».</li>
+<li><strong>Рилс зовёт на консультацию, которую вы не ведёте.</strong> Решение: новый призыв в бота и в мини-курс (блок 5).</li>
+<li><strong>Нет данных по доходу и обращениям.</strong> Решение: список обращений две недели, цифры по воронке с первого теста.</li>
+<li><strong>Два канала подряд.</strong> Решение: правило «публикуем один раз и репостим».</li>
+<li><strong>Юридическая точность.</strong> Всё проверяете вы.</li>
+<li><strong>Бот не работает.</strong> Запасной путь через личные сообщения.</li>
+<li><strong>Потеря людей после цены.</strong> Форматы и «от», разбор переписок.</li>
+<li><strong>Мало кейсов по зарубежным счетам.</strong> Начинаем с материалов, где опыта достаточно (продажа недвижимости нерезидентом, таблицы), не заявляем «эксперт по всему».</li>
+<li><strong>Сайт не опубликован.</strong> Первые продажи ведём через бота и платёжную ссылку. Перед первой продажей проверяем платёжный сервис, оферту и политику обработки персональных данных.</li>
+<li><strong>Спорные комментарии под рилсами.</strong> Отвечаем отдельным постом с вашей проверкой.</li>
+</ul></section><section class="pg" data-i="13" style="--c:var(--c1);--t:var(--t1)"><h2>Блок 13. Журнал решений и список «потом»</h2>
+<h3 id="s13-0">Журнал решений (заполняем с датой)</h3>
+<ul>
+<li>18.11.2026: ваши приоритеты продуктов (мини-курс, справочник, курс для юристов), площадки под темы (Telegram и YouTube нерезиденты, Instagram резиденты), воронка Instagram ведёт в продукт, а не в личные консультации.</li>
+<li>Фокус и модель (А, Б, В): <span class="tg tg-q">ждём ответ</span> до 04.12.2026</li>
+<li>Порядок направлений (нерезиденты, сделки с долями, мини-курс): <span class="tg tg-q">ждём ответ</span> 20.11</li>
+<li>Мини-курс: срок и цена: <span class="tg tg-q">ждём ответ</span> 20.11</li>
+<li>Анонс второго потока курса: <span class="tg tg-q">ждём ответ</span> 20.11</li>
+<li>Позиционирующая фраза: <span class="tg tg-q">ждём ответ</span></li>
+<li>Единый стаж и регалии: <span class="tg tg-q">ждём ответ</span></li>
+<li>Формулировка «законодательство меняется несколько раз в месяц»: <span class="tg tg-q">ждём ответ</span> вы подтверждаете</li>
+<li>Формат консультаций и цены (25 000 ₽, от 50 000 ₽): <span class="tg tg-q">ждём ответ</span></li>
+<li>Нужен ли сайт в ближайшие 3 месяца: <span class="tg tg-q">ждём ответ</span></li>
+</ul>
+<h3 id="s13-1">Список «потом» (не делаем до выбора фокуса)</h3>
+<ul>
+<li>Клуб для юристов и бухгалтеров.</li>
+<li>Консультации для юристов по отдельным вопросам.</li>
+<li>Исполнитель для подачи деклараций.</li>
+<li>YouTube как основной канал.</li>
+<li>Таргетированная реклама.</li>
+<li>Отдельные каналы под каждую аудиторию.</li>
+<li>Налоговая миграция в льготные регионы, выездные проверки, судебные споры, масштабирование бухсопровождения (вы не хотите).</li>
+</ul></section><section class="pg" data-i="14" style="--c:var(--c2);--t:var(--t2)"><h2>Приложение A. Ключевые цифры</h2>
+<ul>
+<li>Instagram @white.tax: 1 656 подписчиков, 227 публикаций. Рилс 22.10: 49 642 просмотра, 40 155 зрителей, 2,4 тыс. сохранений, 936 отправок, 37 репостов, 708 подписок, среднее время просмотра 45 секунд.</li>
+<li>Медиана просмотров рилсов за 3 месяца: 619. Публикаций за 3 месяца: 12.</li>
+<li>Telegram: 443 подписчика (+9 за 8-15.11), уведомления включены у 21,9%, в 2026 среднее 17 реакций на пост.</li>
+<li>YouTube: 8 подписчиков, 2 видео, 29 просмотров.</li>
+<li>Курс: первый поток 4 участника.</li>
+<li>Конкуренты в Instagram (типичные просмотры рилса): Баранча 1 570 (22,8 тыс. подписчиков), школа Баранча 540 (14,5 тыс.), Буйлова 730 (9 062), Краснова 1 900 (36,3 тыс.); у вас 619 на 1 656.</li>
+<li>Цены конкурентов (подтверждены): консультация нерезидента Дулкарнаев 30 000 ₽, Андреев 25 000 ₽, Зайцева от 10 000 ₽, Ослоновская 10 000 ₽ (2024); декларация при продаже Зайцева от 7 000 ₽; справочники Дулкарнаева 10 000 ₽; курс Зайцевой 52 800 ₽; абонемент Красновой 149 990 ₽.</li>
+<li>Бот: 10 вопросов заполнено, 4 раздела пустые.</li>
+<li>Ваши цены: консультация нерезидентам 25 000 ₽, заключение 50 000-100 000 ₽, требование налоговой пример 120 000 ₽, заключение по доле ООО 350 000 ₽, декларация 15 000-25 000 ₽, курс (1-й поток) 65 000 ₽ / 55 000 ₽, практикумы 890 и 4 900 ₽.</li>
+</ul></section><section class="pg" data-i="15" style="--c:var(--c3);--t:var(--t3)"><h2>Приложение B. Что ещё нужно от вас (по мере готовности)</h2>
+<ul>
+<li>Скриншоты: Instagram Insights, вкладка «Аудитория», YouTube Studio.</li>
+<li>Переписки с клиентами и скрин отказа при цене 15 000 ₽.</li>
+<li>Канал эксперта по сделкам с долями.</li>
+<li>Справочник по вычетам одним файлом, презентации и план модулей курса, PDF-инструкции.</li>
+<li>Страницы сайта с услугами (если есть).</li>
+<li>Согласие клиентки на публикацию отзыва (3 млн против 25 тыс.).</li>
+<li>Формулировка стажа и квалификации одной фразой.</li>
+<li>Бюджет на продвижение (есть или нет).</li>
+<li>Список обращений на 2 недели: дата, тема, чем закончилось.</li>
+</ul></section>
+<div class="pager"><button class="pv" id="pv"></button><button class="nx" id="nx"></button></div>
+</main>
+</div>
+<script>
+(function(){
+  try{if('scrollRestoration' in history)history.scrollRestoration='manual';}catch(e){}
+  var pages=[].slice.call(document.querySelectorAll('.pg'));
+  var items=[].slice.call(document.querySelectorAll('.ni'));
+  var N=pages.length, cur=0;
+  var colors=getComputedStyle(document.documentElement);
+  items.forEach(function(it,i){it.style.setProperty('--c','var(--c'+(i%6)+')');it.style.setProperty('--t','var(--t'+(i%6)+')');});
+  function label(i){var b=items[i].querySelector('.nt');return b?b.textContent:'';}
+  function show(i,keep){
+    if(i<0||i>=N)return; cur=i;
+    pages.forEach(function(p,k){p.classList.toggle('on',k===i)});
+    items.forEach(function(p,k){p.classList.toggle('on',k===i)});
+    var pv=document.getElementById('pv'),nx=document.getElementById('nx');
+    pv.hidden=i===0; nx.hidden=i===N-1;
+    pv.innerHTML=i>0?'<small>Назад</small>'+label(i-1):'';
+    nx.innerHTML=i<N-1?'<small>Дальше</small>'+label(i+1):'';
+    if(!keep){window.scrollTo(0,0);}
+    try{history.replaceState(null,'','#b'+i);}catch(e){}
+    document.getElementById('side').classList.remove('open');
+  }
+  document.querySelectorAll('.nb').forEach(function(b){b.addEventListener('click',function(){show(+b.dataset.i)})});
+  document.querySelectorAll('.sub').forEach(function(a){a.addEventListener('click',function(e){
+    e.preventDefault(); show(+a.dataset.sec,true);
+    var t=document.getElementById(a.getAttribute('href').slice(1)); if(t)t.scrollIntoView({block:'start'});
+  })});
+  document.getElementById('pv').onclick=function(){show(cur-1)};
+  document.getElementById('nx').onclick=function(){show(cur+1)};
+  document.addEventListener('keydown',function(e){
+    if(e.target.tagName==='INPUT')return;
+    if(e.key==='ArrowRight')show(cur+1); if(e.key==='ArrowLeft')show(cur-1);
+  });
+  document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(e){
+    e.preventDefault(); var box=b.parentElement.nextElementSibling; var txt=box?box.innerText:'';
+    try{navigator.clipboard.writeText(txt).then(function(){b.textContent='Скопировано';b.classList.add('ok');setTimeout(function(){b.textContent='Копировать';b.classList.remove('ok')},1500)});}catch(err){}
+  })});
+  document.querySelectorAll('input[data-k]').forEach(function(c){
+    try{c.checked=localStorage.getItem('dv-'+c.dataset.k)==='1';}catch(e){}
+    c.addEventListener('change',function(){try{localStorage.setItem('dv-'+c.dataset.k,c.checked?'1':'0');}catch(e){}});
+  });
+  document.querySelectorAll('a.jump').forEach(function(a){a.addEventListener('click',function(e){
+    e.preventDefault(); var d=document.getElementById(a.dataset.c); if(d){d.open=true; d.scrollIntoView({block:'start'});}
+  })});
+  var fs=17;
+  function setfs(v){fs=Math.max(14,Math.min(24,v));document.documentElement.style.setProperty('--fs',fs+'px');}
+  document.getElementById('fp').onclick=function(){setfs(fs+1)};
+  document.getElementById('fm').onclick=function(){setfs(fs-1)};
+  document.getElementById('menu').onclick=function(){document.getElementById('side').classList.toggle('open')};
+  var m=location.hash.match(/^#b(\d+)$/); show(m?+m[1]:0);
+})();
+</script>
+</body>
+</html>
